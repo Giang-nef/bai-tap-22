@@ -3,7 +3,7 @@ body {
     font-family: 'Montserrat', sans-serif;
   }
   
-  .background-headers {
+  .background-headers > img   {
     max-width: 2889px;
     width: 100%;
     height: 1391px;
@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     max-width: 100%;
-    width: 70%;
+    width: 100%;
     margin: 30px auto;
   }
   
@@ -140,9 +140,8 @@ body {
   
   .about-service {
     display: grid;
-    grid-template-columns: 735px 735px 735px;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 40px;
-    margin: 40px;
   }
   
   .row {
@@ -155,10 +154,12 @@ body {
   
   .row > div > img {
     margin-bottom: 85px;
+    max-width: 735px;
+    width: 100%;
   }
   
   .content-area {
-    max-width: 100%;
+    max-width: 735px;
     width: 75%;
     margin: 20px auto;
   }
@@ -256,22 +257,20 @@ body {
   }
   
   .search-menu {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 80px;
-    left: 85px;
+    margin-left: 100px;
+    margin-top: 45px;
+    max-width: 550px;
+    width: 100%;
   }
   
   .search {
     position: relative; 
-    flex: 5%;
-    height: 2110px;
   }
   
   .search > input {
     background-color: #FFFFFF;
-    width: 378px;
+    max-width: 378px;
+    width: 100%;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -281,18 +280,26 @@ body {
     height: 73px;
     border: 0px;
     padding-left: 20px;
+    position: relative; 
   }
   
   .search > img {
     position: absolute;
     top: 30px;
-    right: 100px;
+    right: 170px;
+  }
+
+  .menu {
+    position: relative;
+    top: 170px;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
   }
   
   .recent-posts {
     position: relative;
-    /* top: 151px; */
-    flex: 5%;
+    flex: 1;
   }
   
   .recent-posts > h5 {
@@ -306,6 +313,7 @@ body {
   
   .recent-posts > ul {
     list-style-type: none;
+    padding: 0px;
   }
   
   .recent-posts > ul > li {
@@ -316,12 +324,12 @@ body {
     font-size: 22px;
     line-height: 31px;
     text-decoration-line: underline;
+    margin: 20px 0px;
   }
   
   .recent-comments {
     position: relative;
-    /* top: 450px; */
-    flex: 5%;
+    flex: 1;
   }
   
   .recent-comments > h5 {
@@ -335,6 +343,7 @@ body {
   
   .recent-comments > ul {
     list-style-type: none;
+    padding: 0px;
   }
   
   .recent-comments > ul > li {
@@ -345,15 +354,15 @@ body {
     font-size: 22px;
     line-height: 31px;
     text-decoration-line: underline;
+    margin: 20px 0px;
   }
   
-  .recent-comments {
+  .meta {
     position: relative;
-    /* top: 450px; */
-    flex: 5%;
+    flex: 1;
   }
   
-  .recent-comments > h5 {
+  .meta > h5 {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -362,11 +371,12 @@ body {
     letter-spacing: 0.1em;
   }
   
-  .recent-comments > ul {
+  .meta > ul {
     list-style-type: none;
+    padding: 0px;
   }
   
-  .recent-comments > ul > li {
+  .meta > ul > li {
     color:  rgba(0, 0, 0, 0.6);
     font-family: Montserrat;
     font-style: normal;
@@ -374,6 +384,80 @@ body {
     font-size: 22px;
     line-height: 31px;
     text-decoration-line: underline;
+    margin: 20px 0px;
+  }
+
+  .circle-arrow {
+    max-width: 90px;
+    width: 100%;
+    height: 90px;
+    position: relative;
+    top: 2000px;
   }
   
+  .arrow {
+    position: absolute;
+    left: 33px;
+    top: 33px;
+  }
   
+footer {
+  max-width: 100%;
+  background-color:  #E5E5E5;
+  margin-top: 0px;
+  padding: 130px 0px 160px 0px;
+}
+
+  .sum-footer {
+    max-width: 2889px;
+    width: 92%;
+    margin: 0px auto;
+    display: flex;
+  }  
+
+  .logo-footer {
+    justify-content: end;
+    flex: 1;
+  }
+
+  .older-post > h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 45px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin: 0px;
+    padding: 0px 0px 227px 35px;
+  }
+
+  .contact {
+    flex: 1;
+    position: relative;
+    top: 285px;
+    right: 160px;
+    max-width: 658px;
+    width: 100%;
+    height: 200px;
+  }
+
+  .contact > div > p {
+    display: inline;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 64px;
+    color: #000000;
+  }
+
+  .contact > div > span {
+    display: inline;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 64px;
+    color: #FADD44;
+  }
